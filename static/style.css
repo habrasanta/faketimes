@@ -1,0 +1,168 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font: 12px Verdana,sans-serif;
+  margin: 20px auto;
+  padding: 0 10px;
+  width: 600px;
+}
+
+a {
+  color: #6da3bd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4d7285;
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: none;
+}
+
+th,
+td {
+  vertical-align: middle;
+}
+
+th {
+  color: #999;
+  font: 12px Arial,sans-serif;
+}
+
+td {
+  padding-bottom: 5px;
+}
+
+.karma,
+.rating {
+  font-size: 18px;
+  text-align: center;
+  width: 100px;
+}
+
+.karma {
+  color: #74c262;
+}
+
+.rating {
+  color: #c6c;
+}
+
+.avatar {
+  width: 58px;
+}
+
+.avatar img {
+  border-radius: 5px;
+  height: 48px;
+  width: 48px;
+}
+
+.username a {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.item {
+  margin-bottom: 25px;
+}
+
+.item label {
+  color: #424242;
+  display: block;
+  font: 13px Arial,sans-serif;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.required_field {
+  color: #ff7058;
+}
+
+.description {
+  color: #999;
+  font-size: 11px;
+  line-height: 15px;
+  margin-top: 5px;
+}
+
+input[type="text"] {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  width: 300px;
+  color: #3b3b3b;
+  height: 27px;
+  line-height: 27px;
+  padding: 0;
+  text-indent: 5px;
+}
+
+.flash {
+  background: #d3f2c0;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 10px;
+}

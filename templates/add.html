@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <form action="{{ url_for('add') }}" method="post">
+    <div class="item">
+      <label for="username">
+        Имя пользователя:<sup class="required_field">*</sup>
+      </label>
+      <input type="text" name="username" id="username">
+    </div>
+    <div class="item">
+      <label for="avatar">Аватарка:</label>
+      <input type="text" name="avatar" id="avatar">
+      <div class="description">
+        Оставьте пустым, чтобы использовать стандартную.
+      </div>
+    </div>
+    <div class="item">
+      <label for="karma">
+        Карма:<sup class="required_field">*</sup>
+      </label>
+      <input type="text" name="karma" id="karma" value="0.0">
+    </div>
+    <div class="item">
+      <label for="rating">
+        Рейтинг:<sup class="required_field">*</sup>
+      </label>
+      <input type="text" name="rating" id="rating" value="0.0">
+    </div>
+    <button type="submit">Создать</button>
+  </form>
+{% endblock %}

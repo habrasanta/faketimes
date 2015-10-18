@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <p>
+    Выберите пользователя из списка ниже или
+    <a href="{{ url_for('add') }}">создайте нового</a>.
+  </p>
+  <table>
+    <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>карма</th>
+      <th>рейтинг</th>
+    </tr>
+    {% for user_id, username, karma, rating, avatar in users %}
+      <tr>
+        <td class="avatar"><img src="{{ avatar }}"></td>
+        <td class="username">
+          <a href="{{ redirect_uri }}?code=user{{ user_id }}">{{ username }}</a>
+        </td>
+        <td class="karma">{{ "{:.1f}".format(karma).replace('.', ',') }}</td>
+        <td class="rating">{{ "{:.1f}".format(rating).replace('.', ',') }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <p>
+    Страница проекта:
+    <a href="https://github.com/clubadm/faketimes">https://github.com/clubadm/faketimes</a>.
+  </p>
+{% endblock %}
