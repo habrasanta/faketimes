@@ -15,7 +15,7 @@ OpenSource-проекты вроде [ХабраАДМ](https://habra-adm.ru/), 
 
 ```bash
 $ pip install Flask
-$ python faketime.py
+$ python faketimes.py
 ```
 
 ## Скриншоты
